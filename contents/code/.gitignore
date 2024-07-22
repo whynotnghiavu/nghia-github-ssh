@@ -1,0 +1,11 @@
+# Bỏ qua tất cả mọi thứ trong thư mục
+*
+
+# Nhưng không bỏ qua tệp .gitignore
+!.gitignore
+
+# Nhưng không bỏ qua tệp config
+!config
+
+# Nhưng không bỏ qua tệp nghia-github-ssh.py
+!nghia-github-ssh.py
