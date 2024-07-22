@@ -1,0 +1,1 @@
+Nhóm các file vào folder *output*
