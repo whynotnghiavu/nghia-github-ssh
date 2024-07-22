@@ -27,6 +27,7 @@ Host github.com-{username}
 """
 
     with open("config", 'w') as file:
+    # with open("output/config", 'w') as file:
         file.write(content)
 
 
@@ -43,6 +44,7 @@ def create_ssh_file(list_username):
             "-f", username,
             "-N", SSH_PASSWORD
         ]
+            # "-f", "output/"+username,
 
         subprocess.run(command, check=True)
 
