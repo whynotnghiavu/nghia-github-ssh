@@ -52,7 +52,6 @@ def create_ssh_file(list_username):
 def add_ssh_file(list_username):
     try:
         # # Start the SSH agent
-        # # eval $(ssh-agent -s)
         # print("🚀 Starting ssh-agent")
         # subprocess.run("eval $(ssh-agent -s)", shell=True, check=True)
 
