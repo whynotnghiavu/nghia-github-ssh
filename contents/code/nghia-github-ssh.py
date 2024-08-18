@@ -83,16 +83,18 @@ def create_symlink(list_username):
         list_file.append(f"{username}.pub")
 
     for path in list_file:
+        print(f"🚀path = {path}")
         symlink_path = os.path.expanduser(f"~/.ssh/{path}")
+        print(f"🚀symlink_path = {symlink_path}")
 
-        if os.path.exists(symlink_path):
-            print(f"The symbolic link already exists: {path}")
-        else:
-            try:
-                os.symlink(os.path.abspath(path), symlink_path)
-                print(f"Symbolic link created at: {symlink_path}")
-            except OSError as e:
-                print(f"Failed to create symbolic link: {e}")
+        try:
+            os.remove(symlink_path)
+            print(f"Đã xóa symlink: {symlink_path}")
+            os.symlink(os.path.abspath(path), symlink_path)
+            print(f"Symbolic link created at: {symlink_path}")
+        except OSError as e:
+            print(f"Failed to create symbolic link: {e}")
+
 
 
 if __name__ == "__main__":
