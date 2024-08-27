@@ -4,11 +4,6 @@ Host github.com-whynotnghiavu
     User git
     IdentityFile ~/.ssh/whynotnghiavu
 
-Host github.com-company20206205
-    HostName github.com
-    User git
-    IdentityFile ~/.ssh/company20206205
-
 Host github.com-20206205
     HostName github.com
     User git
